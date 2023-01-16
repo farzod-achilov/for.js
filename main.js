@@ -117,32 +117,40 @@ function first(a,n) {
    return num
 }
 
-// // murakkab son
-// function first(a) {
-//    num = 0
-//    temp = 0 
-//    for (i = 0; i < n; i++) {
-//       temp = temp * 10 + a
-//       num = num + temp
-//    }
-//    return num
-// }
+// murakkab son
+function first(a) {
+   num = 0
+   for (i = 1; i < a; i++) {
+      if (a % i == 0) {
+         num = num + i
+      }
+   }
+   
+   if(a == num) {
+      console.log(true);
+   }else {
+      console.log(false);
+   }
+}
 
 // a gacha bo`gan sonlar kvatrati yi`gindsi
 function first(a) {
    num = 0
    for (i = 1; i <=a; i++) {
       num = num + i * i
+      return num
    }
-   return num
 }
 
 // // armstorng raqam
 // function first(a) {
 //    num = 0
-//    for (i = 1; i <=a; i++) {
-//       num = num + i * i
-//    }
+//    temp = a
+//    m
+//    numberLenght = 0
+//    // berilgan sonnig uzunkigini topish
+
+   
 //    return num
 // }
 
@@ -161,4 +169,35 @@ function first(a) {
       console.log(false);
    }
    return
+}
+
+// nechi xonali 
+function first(a) {
+   num = a.toString().length
+
+   return num
+}
+
+// raqamlar yigindisi 
+function first(a) {
+   num = 0 
+   for (temp = a; temp !=0; temp / 10) {
+      num = num + temp % 10
+   }
+   return num
+}
+
+// Teskari son 
+function first(a) {
+   var temp;
+   reverseNum = 0 
+   for(;a !=0;) {
+
+   
+   temp = a % 10
+   reverseNum = reverseNum * 10 + temp
+
+   a = a / 10
+   }
+   return reverseNum 
 }
